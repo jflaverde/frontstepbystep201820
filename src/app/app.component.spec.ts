@@ -14,11 +14,11 @@ describe('AppComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            imports: [ AppRoutingModule, HttpClientModule ],
-            declarations: [ AppComponent, BookListComponent, AuthorListComponent, EditorialListComponent ],
-            providers: [{provide: APP_BASE_HREF, useValue: ''} ]
+            imports: [AppRoutingModule, HttpClientModule],
+            declarations: [AppComponent, BookListComponent, AuthorListComponent, EditorialListComponent],
+            providers: [{ provide: APP_BASE_HREF, useValue: '' }]
         })
-        .compileComponents();
+            .compileComponents();
     }));
 
     beforeEach(() => {
@@ -30,12 +30,12 @@ describe('AppComponent', () => {
     it('should create the app', async(() => {
         expect(component).toBeTruthy();
     }));
-    
+
     it(`should have as title 'Bookstore'`, async(() => {
         const app = fixture.debugElement.componentInstance;
         expect(app.title).toEqual(component.title);
     }));
-    
+
     it('should render titles in the navbar', async(() => {
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;

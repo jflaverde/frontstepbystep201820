@@ -10,7 +10,7 @@ export class Author {
 
     /**
      * The author's name
-     */ 
+     */
     name: string;
 
     /**

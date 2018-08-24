@@ -22,4 +22,4 @@ import { FormsModule } from '@angular/forms';
     providers: [BookService],
     bootstrap: [BookListComponent]
 })
-export class BookModule {}
+export class BookModule { }

@@ -18,4 +18,4 @@ import { FormsModule } from '@angular/forms';
     declarations: [EditorialListComponent],
     providers: [EditorialService]
 })
-export class EditorialModule {}
+export class EditorialModule { }

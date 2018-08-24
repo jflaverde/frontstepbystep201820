@@ -16,11 +16,11 @@ describe('AuthorComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [ AppRoutingModule, HttpClientModule, AppModule ],
-            declarations: [ ],
-            providers: [{provide: APP_BASE_HREF, useValue: ''}, AuthorService ]
+            imports: [AppRoutingModule, HttpClientModule, AppModule],
+            declarations: [],
+            providers: [{ provide: APP_BASE_HREF, useValue: '' }, AuthorService]
         })
-        .compileComponents();
+            .compileComponents();
     });
 
     beforeEach(() => {
@@ -32,7 +32,7 @@ describe('AuthorComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
-    
+
     it('should have a list of authors', () => {
         component.authors = authors;
         expect(component.authors.length).toEqual(authors.length);
@@ -43,5 +43,5 @@ describe('AuthorComponent', () => {
         expect(component.authors[0].birthDate).toEqual(authors[0].birthDate);
         expect(component.authors[authors.length - 1].birthDate).toEqual(authors[authors.length - 1].birthDate);
     });
-    
+
 });

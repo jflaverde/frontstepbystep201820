@@ -17,7 +17,7 @@ export class EditorialListComponent implements OnInit {
      * @param editorialService The author's services provider
      */
     constructor(private editorialService: EditorialService) { }
-    
+
     /**
      * The list of editorials which belong to the BookStore
      */

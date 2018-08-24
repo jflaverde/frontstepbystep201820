@@ -6,35 +6,35 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppModule } from '../../app.module';
 
 import { BookListComponent } from './book-list.component';
-import {BookService} from '../book.service';
+import { BookService } from '../book.service';
 import { Book } from '../book';
 
 describe('BookListComponent', () => {
     let component: BookListComponent;
     let fixture: ComponentFixture<BookListComponent>;
     const books: Book[] = require('../../../assets/books.json');
-    
+
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            imports: [ AppRoutingModule, HttpClientModule, AppModule ],
-            declarations: [ ],
-            providers: [{provide: APP_BASE_HREF, useValue: ''}, BookService ]
+            imports: [AppRoutingModule, HttpClientModule, AppModule],
+            declarations: [],
+            providers: [{ provide: APP_BASE_HREF, useValue: '' }, BookService]
         })
-        .compileComponents();
+            .compileComponents();
     }));
-    
+
     beforeEach(() => {
         fixture = TestBed.createComponent(BookListComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
-    
-    
+
+
     it('should create', () => {
         expect(component).toBeTruthy();
     });
-    
-    
+
+
     it('should have a list of books', () => {
         component.books = books;
         expect(component.books.length).toEqual(books.length);

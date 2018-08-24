@@ -21,4 +21,4 @@ import { FormsModule } from '@angular/forms';
     providers: [AuthorService],
     bootstrap: [AuthorListComponent]
 })
-export class AuthorModule {}
+export class AuthorModule { }

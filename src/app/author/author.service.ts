@@ -3,9 +3,10 @@ import { Observable } from 'rxjs/Observable';
 
 import { Author } from './author';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
-const API_URL = "../../assets/";
-const authors = '/authors.json';
+const API_URL = environment.apiURL;
+const authors = '/authors';
 
 /**
  * The service provider for everything related to authors
@@ -17,7 +18,7 @@ export class AuthorService {
      * Constructor of the service
      * @param http The HttpClient - This is necessary in order to perform requests
      */
-    constructor(private http: HttpClient) {}
+    constructor(private http: HttpClient) { }
 
     /**
      * Returns the Observable object containing the list of authors retrieved from the API

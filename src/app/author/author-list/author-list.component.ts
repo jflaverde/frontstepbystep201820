@@ -17,7 +17,7 @@ export class AuthorListComponent implements OnInit {
      * @param authorService The author's services provider
      */
     constructor(private authorService: AuthorService) { }
-    
+
     /**
      * The list of authors which belong to the BookStore
      */
