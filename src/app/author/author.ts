@@ -21,7 +21,7 @@ export class Author {
     /**
      * The author's birthdate MM/DD/YYYY
      */
-    birthDate: string;
+    birthdate: string;
 
     /**
      * A brief description of the author's life
