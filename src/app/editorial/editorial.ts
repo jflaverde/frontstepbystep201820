@@ -1,5 +1,3 @@
-import { Book } from '../book/book';
-
 /**
 * This class represents an editorial of the BookStore. 
 * It contains all the information relevant to the editorial.
@@ -24,9 +22,4 @@ export class Editorial {
     * A brief description of the editorial
     */
     description: string;
-
-    /**
-     * The editorial's books
-     */
-    books: Book[];
 }

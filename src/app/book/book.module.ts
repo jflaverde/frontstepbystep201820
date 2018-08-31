@@ -6,8 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../routing-module/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from '../shared/shared.module';
-import { BookDetailComponent } from './book-detail/book-detail.component';
+
 
 @NgModule({
     imports: [
@@ -15,11 +14,10 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
         AppRoutingModule,
         HttpClientModule,
         CommonModule,
-        FormsModule,
-        SharedModule
+        FormsModule
     ],
     declarations: [
-        BookListComponent, BookDetailComponent
+        BookListComponent
     ],
     providers: [BookService],
     bootstrap: [BookListComponent]
