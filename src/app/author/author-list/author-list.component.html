@@ -6,15 +6,13 @@
                 <tr>
                     <th>Name</th>    
                     <th>Birth Date</th>  
-                    
+
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor = "let author of authors">
-                    <td>
-                        <dd class="figure-caption" routerLink="/authors/{{author.id}}">{{author.name}}</dd>
-                    </td>
-                    <td>{{author.birthdate|date:'yyyy-MM-dd'}}</td>
+                    <td><span>{{author.name}}</span></td>
+                    <td>{{author.birthDate|date:'yyyy-MM-dd'}}</td>
                 </tr>
             </tbody>
         </table>

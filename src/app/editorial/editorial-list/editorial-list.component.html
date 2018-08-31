@@ -9,9 +9,8 @@
             </thead>
             <tbody>
                 <tr *ngFor = "let editorial of editorials">
-                    <td>
-                        <dd class="figure-caption" routerLink="/editorials/{{editorial.id}}">{{editorial.name}}</dd>
-                    </td>
+                    <td>{{editorial.name}}</td>
+                  
                 </tr>
             </tbody>
         </table>

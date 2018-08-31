@@ -7,9 +7,7 @@ import { AuthorModule } from './author/author.module';
 import { BookModule } from './book/book.module';
 import { EditorialModule } from './editorial/editorial.module';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
-import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
     declarations: [
@@ -22,12 +20,9 @@ import { SharedModule } from './shared/shared.module';
         AuthorModule,
         BookModule,
         EditorialModule,
-        FormsModule,
-        BrowserAnimationsModule,
-        ToastrModule.forRoot(),
-        SharedModule
+        FormsModule
     ],
 
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

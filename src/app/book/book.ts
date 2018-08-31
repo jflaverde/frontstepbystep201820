@@ -1,6 +1,3 @@
-import { Author } from '../author/author';
-import { Editorial } from '../editorial/editorial';
-
 /**
 * This class represents a book of the BookStore. 
 * It contains all the information relevant to the book.
@@ -22,11 +19,6 @@ export class Book {
     isbn: string;
 
     /**
-    * The book's publish date
-    */
-    publish_date: Date;
-
-    /**
     * A brief summary of the book
     */
     description: string;
@@ -35,14 +27,4 @@ export class Book {
     * The location of the book's image
     */
     image: string;
-
-    /**
-    * The authors of the book
-    */
-    authors: Author[];
-
-    /**
-    * The editorial of the book
-    */
-    editorial: Editorial;
 }

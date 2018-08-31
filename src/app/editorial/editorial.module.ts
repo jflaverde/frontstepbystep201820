@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../routing-module/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from '../shared/shared.module';
-import { EditorialDetailComponent } from './editorial-detail/editorial-detail.component';
 
 @NgModule({
     imports: [
@@ -15,10 +13,9 @@ import { EditorialDetailComponent } from './editorial-detail/editorial-detail.co
         AppRoutingModule,
         HttpClientModule,
         CommonModule,
-        FormsModule,
-        SharedModule
+        FormsModule
     ],
-    declarations: [EditorialListComponent, EditorialDetailComponent],
+    declarations: [EditorialListComponent],
     providers: [EditorialService]
 })
-export class EditorialModule { }
+export class EditorialModule {}

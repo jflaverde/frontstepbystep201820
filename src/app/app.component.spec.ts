@@ -3,9 +3,10 @@ import { AppRoutingModule } from './routing-module/app-routing.module';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppModule } from './app.module';
-
 import { AppComponent } from './app.component';
+import { BookListComponent } from './book/book-list/book-list.component';
+import { AuthorListComponent } from './author/author-list/author-list.component';
+import { EditorialListComponent } from './editorial/editorial-list/editorial-list.component';
 
 describe('AppComponent', () => {
     let component: AppComponent;
@@ -13,11 +14,11 @@ describe('AppComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            imports: [AppRoutingModule, HttpClientModule, AppModule],
-            declarations: [],
-            providers: [{ provide: APP_BASE_HREF, useValue: '' }]
+            imports: [ AppRoutingModule, HttpClientModule ],
+            declarations: [ AppComponent, BookListComponent, AuthorListComponent, EditorialListComponent ],
+            providers: [{provide: APP_BASE_HREF, useValue: ''} ]
         })
-            .compileComponents();
+        .compileComponents();
     }));
 
     beforeEach(() => {
@@ -29,12 +30,12 @@ describe('AppComponent', () => {
     it('should create the app', async(() => {
         expect(component).toBeTruthy();
     }));
-
+    
     it(`should have as title 'Bookstore'`, async(() => {
         const app = fixture.debugElement.componentInstance;
         expect(app.title).toEqual(component.title);
     }));
-
+    
     it('should render titles in the navbar', async(() => {
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;

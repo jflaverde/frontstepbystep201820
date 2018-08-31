@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from '../routing-module/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { SharedModule } from '../shared/shared.module';
-import { AuthorDetailComponent } from './author-detail/author-detail.component';
 
 @NgModule({
     imports: [
@@ -15,13 +13,12 @@ import { AuthorDetailComponent } from './author-detail/author-detail.component';
         AppRoutingModule,
         HttpClientModule,
         CommonModule,
-        FormsModule,
-        SharedModule
+        FormsModule
     ],
     declarations: [
-        AuthorListComponent, AuthorDetailComponent
+        AuthorListComponent
     ],
     providers: [AuthorService],
     bootstrap: [AuthorListComponent]
 })
-export class AuthorModule { }
+export class AuthorModule {}
