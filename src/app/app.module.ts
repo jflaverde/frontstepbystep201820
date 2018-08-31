@@ -9,7 +9,7 @@ import { EditorialModule } from './editorial/editorial.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -24,7 +24,8 @@ import { ToastrModule } from 'ngx-toastr';
         EditorialModule,
         FormsModule,
         BrowserAnimationsModule,
-        ToastrModule.forRoot()
+        ToastrModule.forRoot(),
+        SharedModule
     ],
 
     bootstrap: [AppComponent]
